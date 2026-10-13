@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://novacart.demo/sitemap.xml

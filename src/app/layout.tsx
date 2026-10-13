@@ -1,0 +1,3 @@
+import type { Metadata } from "next"; import "./globals.css"; import { Providers } from "@/lib/store"; import { Header, Footer, CartDrawer, SpinWheel } from "@/components/ui";
+export const metadata: Metadata = { title:"NovaCart — Trending Gadgets, Honest Delivery", description:"Premium dropshipping store: trending gadgets, home upgrades, fitness gear. Supplier-direct, tracked 5–10 day delivery, 30-day returns.", openGraph:{title:"NovaCart",description:"Trending gadgets, honest delivery.",type:"website"} };
+export default function RootLayout({children}:{children:React.ReactNode}){ return <html lang="en"><body className="pb-16 md:pb-0"><Providers><Header/><main id="main">{children}</main><Footer/><CartDrawer/><SpinWheel/></Providers></body></html> }

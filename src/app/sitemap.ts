@@ -1,0 +1,1 @@
+import type { MetadataRoute } from "next"; export default function sitemap():MetadataRoute.Sitemap{ return [{url:"https://novacart.demo/",priority:1},{url:"https://novacart.demo/shop",priority:0.9},{url:"https://novacart.demo/track",priority:0.7},{url:"https://novacart.demo/collections/under-20",priority:0.8}]; }

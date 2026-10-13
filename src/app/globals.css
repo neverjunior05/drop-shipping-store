@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap');
+@import "tailwindcss";
+:root{--bg:#F6F7FB;--surface:#fff;--elev:#ECEEF8;--ink:#0B0B1E;--muted:#6A6D86;--indigo:#5B3DF5;--aqua:#00D4C8;--pink:#FF3D81;--lemon:#FFE45C}
+.dark{--bg:#07070F;--surface:#11111F;--elev:#1B1B30;--ink:#F2F2FA;--muted:#9C9FBC}
+html{scroll-behavior:smooth} body{background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,sans-serif}
+h1,h2,h3,.font-display{font-family:"Sora",sans-serif} .font-mono2{font-family:"IBM Plex Mono",monospace}
+.glass{background:color-mix(in srgb,var(--surface) 82%,transparent);backdrop-filter:blur(16px);border:1px solid color-mix(in srgb,var(--ink) 10%,transparent)}
+.aurora{background:linear-gradient(120deg,#5B3DF5,#00D4C8,#FF3D81,#5B3DF5);background-size:220% 220%;animation:aurora 12s ease infinite}
+@keyframes aurora{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}} .floaty{animation:floaty 5s ease-in-out infinite}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}} .marquee{animation:marquee 26s linear infinite}
+@keyframes shimmer{from{background-position:200% 0}to{background-position:-200% 0}} .shimmer{background:linear-gradient(110deg,#eceef8 8%,#fff 18%,#eceef8 33%);background-size:200% 100%;animation:shimmer 1.4s linear infinite}
+.no-scrollbar::-webkit-scrollbar{display:none} .no-scrollbar{scrollbar-width:none}
+input,select,textarea{outline:none} :focus-visible{outline:2px solid #00D4C8;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}

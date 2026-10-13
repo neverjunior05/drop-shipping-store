@@ -1,0 +1,1 @@
+"use client"; import { useStore } from "@/lib/store"; import { useEffect } from "react"; import { useRouter } from "next/navigation"; export default function CartPage(){ const {setCartOpen}=useStore(); const r=useRouter(); useEffect(()=>{ setCartOpen(true); r.replace("/shop"); },[]); return <div className="p-16 text-center font-display font-bold">Opening your cart…</div> }
